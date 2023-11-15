@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    975641,      24038]
-NotebookOptionsPosition[    973331,      23987]
-NotebookOutlinePosition[    973746,      24004]
-CellTagsIndexPosition[    973703,      24001]
+NotebookDataLength[    970811,      23861]
+NotebookOptionsPosition[    968501,      23810]
+NotebookOutlinePosition[    968916,      23827]
+CellTagsIndexPosition[    968873,      23824]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -139,8 +139,7 @@ Cell[BoxData[{
    3.9069946424092474`*^9, {3.90699484465862*^9, 3.90699486412685*^9}, 
    3.90699489615628*^9, 3.9069949345046735`*^9, {3.906994982662214*^9, 
    3.9069950260100417`*^9}},
- CellLabel->
-  "In[387]:=",ExpressionUUID->"61c5348f-eb3a-4ee0-a6c0-c3de5ce7db44"]
+ CellLabel->"In[1]:=",ExpressionUUID->"61c5348f-eb3a-4ee0-a6c0-c3de5ce7db44"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -218,11 +217,11 @@ Cell[BoxData[{
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\<\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(inv\\), \
-\\(BSM\\)]\\)\>\"", ",", "18"}], "]"}], ",", 
+\\(95%\\)]\\)\>\"", ",", "18"}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
-          "\"\<\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(visible\\), \\(BSM\\)]\
-\\)\>\"", ",", "18"}], "]"}], ",", 
+          "\"\<\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(unt.\\), \\(95%\\)]\\)\
+\>\"", ",", "18"}], "]"}], ",", 
          "\"\<\!\(\*SubscriptBox[\(\[Kappa]\), \(\[CapitalGamma]\)]\)\>\""}], 
         "}"}], ",", "None"}], "}"}]}], ",", 
     RowBox[{"FrameLabel", "\[Rule]", 
@@ -255,7 +254,7 @@ Fit)\>\"", ",", "23"}], "]"}]}], "}"}]}], "}"}]}], ",",
                RowBox[{"Directive", "[", 
                 RowBox[{"Gray", ",", "Dashed"}], "]"}]}], "]"}]}], "}"}], ",", 
            RowBox[{"{", 
-            RowBox[{"i", ",", "1", ",", "11"}], "}"}], ",", 
+            RowBox[{"i", ",", "1", ",", "10"}], "}"}], ",", 
            RowBox[{"{", 
             RowBox[{"j", ",", 
              RowBox[{"-", "4"}], ",", "1"}], "}"}]}], "]"}], ",", "1"}], 
@@ -338,9 +337,10 @@ Fit)\>\"", ",", "23"}], "]"}]}], "}"}]}], "}"}]}], ",",
    3.906858559828103*^9}, 3.9068587293557186`*^9, {3.9069895325528364`*^9, 
    3.9069895569334517`*^9}, {3.906989592082677*^9, 3.9069896208331165`*^9}, {
    3.9069928836531878`*^9, 3.906992923969415*^9}, {3.9069952359350996`*^9, 
-   3.9069952521107144`*^9}},
- CellLabel->
-  "In[391]:=",ExpressionUUID->"d4a67096-3e5a-4e4e-b7c3-57f142b29707"],
+   3.9069952521107144`*^9}, {3.90719568428155*^9, 3.907195697054947*^9}, {
+   3.9072599283654757`*^9, 3.9072599285356493`*^9}, 3.907260006030302*^9, {
+   3.9072600452991314`*^9, 3.9072600453411303`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"d4a67096-3e5a-4e4e-b7c3-57f142b29707"],
 
 Cell[BoxData[
  GraphicsBox[{
@@ -1847,7 +1847,7 @@ Cell[BoxData[
          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.008, 0}}, {52.75, 
         FormBox[
          StyleBox[
-         "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(inv\\), \\(BSM\\)]\\)\"", 
+         "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(inv\\), \\(95%\\)]\\)\"", 
           18, StripOnInput -> False], TraditionalForm], {0, 0}}, {56.75, 
         FormBox[
          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {57.75, 
@@ -1861,8 +1861,8 @@ Cell[BoxData[
          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.008, 0}}, {58.25, 
         FormBox[
          StyleBox[
-         "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(visible\\), \\(BSM\\)]\\)\
-\"", 18, StripOnInput -> False], TraditionalForm], {0, 0}}, {62.25, 
+         "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(unt.\\), \\(95%\\)]\\)\"",
+           18, StripOnInput -> False], TraditionalForm], {0, 0}}, {62.25, 
         FormBox[
          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {63.25, 
         FormBox[
@@ -2040,7 +2040,7 @@ Cell[BoxData[
          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.008, 0}}, {52.75, 
         FormBox[
          StyleBox[
-         "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(inv\\), \\(BSM\\)]\\)\"", 
+         "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(inv\\), \\(95%\\)]\\)\"", 
           18, StripOnInput -> False], TraditionalForm], {0, 0}}, {56.75, 
         FormBox[
          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {57.75, 
@@ -2054,8 +2054,8 @@ Cell[BoxData[
          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.008, 0}}, {58.25, 
         FormBox[
          StyleBox[
-         "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(visible\\), \\(BSM\\)]\\)\
-\"", 18, StripOnInput -> False], TraditionalForm], {0, 0}}, {62.25, 
+         "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(unt.\\), \\(95%\\)]\\)\"",
+           18, StripOnInput -> False], TraditionalForm], {0, 0}}, {62.25, 
         FormBox[
          TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {63.25, 
         FormBox[
@@ -2279,31 +2279,6 @@ Cell[BoxData[
        Log[100], 
        Directive[
         GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {-Log[
-         Rational[10000, 11]], 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {-Log[
-         Rational[1000, 11]], 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {-Log[
-         Rational[100, 11]], 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {
-       Log[
-        Rational[11, 10]], 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {
-       Log[11], 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {
-       Log[110], 
-       Directive[
-        GrayLevel[0.5], 
         Dashing[{Small, Small}]]}}}, {None, {{-9.210340371976184, 
        Directive[
         GrayLevel[0]]}, {-6.907755278982137, 
@@ -2478,24 +2453,6 @@ Cell[BoxData[
         Dashing[{Small, Small}]]}, {4.605170185988092, 
        Directive[
         GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {-6.812445099177812, 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {-4.509860006183766, 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {-2.207274913189721, 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {0.09531017980432493, 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {2.3978952727983707`, 
-       Directive[
-        GrayLevel[0.5], 
-        Dashing[{Small, Small}]]}, {4.700480365792417, 
-       Directive[
-        GrayLevel[0.5], 
         Dashing[{Small, Small}]]}}}],
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
@@ -2520,9 +2477,10 @@ Cell[BoxData[
    3.905822259832589*^9, 3.906858509850218*^9, {3.90685855060915*^9, 
    3.9068585603544254`*^9}, 3.906858730629336*^9, 3.9068588263201485`*^9, 
    3.906940983219997*^9, 3.906941891925697*^9, {3.9069928929384303`*^9, 
-   3.906992924840407*^9}, 3.906995253113067*^9},
- CellLabel->
-  "Out[393]=",ExpressionUUID->"47912946-56d5-41d6-95ec-66795b307072"]
+   3.906992924840407*^9}, 3.906995253113067*^9, 3.9070118712716246`*^9, 
+   3.9071957204397197`*^9, 3.9072599354656687`*^9, 3.907260008575651*^9, 
+   3.9072600465437546`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"08790a09-4e6e-4cf0-ae16-7883500e7abb"]
 }, Open  ]]
 }, Open  ]],
 
@@ -2597,8 +2555,8 @@ Cell[BoxData[{
 \\(95%\\)]\\)\>\"", ",", "20"}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
-          "\"\<\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(visible\\), \\(BSM\\)]\
-\\)\>\"", ",", "20"}], "]"}], ",", 
+          "\"\<\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(unt.\\), \\(95%\\)]\\)\
+\>\"", ",", "20"}], "]"}], ",", 
          "\"\<\!\(\*SubscriptBox[\(\[Kappa]\), \(\[CapitalGamma]\)]\)\>\""}], 
         "}"}], ",", "None"}], "}"}]}], ",", 
     RowBox[{"FrameLabel", "\[Rule]", 
@@ -2631,7 +2589,7 @@ Fit)\>\"", ",", "23"}], "]"}]}], "}"}]}], "}"}]}], ",",
                RowBox[{"Directive", "[", 
                 RowBox[{"Gray", ",", "Dashed"}], "]"}]}], "]"}]}], "}"}], ",", 
            RowBox[{"{", 
-            RowBox[{"i", ",", "1", ",", "11"}], "}"}], ",", 
+            RowBox[{"i", ",", "1", ",", "10"}], "}"}], ",", 
            RowBox[{"{", 
             RowBox[{"j", ",", 
              RowBox[{"-", "4"}], ",", "1"}], "}"}]}], "]"}], ",", "1"}], 
@@ -2747,9 +2705,10 @@ HL-LHC\>\"", ",", "18"}], "]"}], ",",
    3.9069418109248667`*^9, 3.9069418274787335`*^9}, {3.9069420570245085`*^9, 
    3.9069421142680244`*^9}, 3.906942184226987*^9, 3.9069896602753296`*^9, {
    3.9069929314802556`*^9, 3.9069929468880987`*^9}, {3.9069952093527927`*^9, 
-   3.9069952220603523`*^9}, 3.906995263064798*^9},
- CellLabel->
-  "In[394]:=",ExpressionUUID->"8b081cc5-7f1b-466b-9208-266e5fd3cc86"],
+   3.9069952220603523`*^9}, 3.906995263064798*^9, {3.907011880310732*^9, 
+   3.907011880686345*^9}, {3.907195712531471*^9, 3.907195717124239*^9}, 
+   3.907260052601124*^9},
+ CellLabel->"In[14]:=",ExpressionUUID->"8b081cc5-7f1b-466b-9208-266e5fd3cc86"],
 
 Cell[BoxData[
  TagBox[
@@ -4542,8 +4501,8 @@ HL-LHC\"", 18, StripOnInput -> False],
           TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.008, 0}}, {58.25, 
          FormBox[
           StyleBox[
-          "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(visible\\), \
-\\(BSM\\)]\\)\"", 20, StripOnInput -> False], TraditionalForm], {0, 0}}, {
+          "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(unt.\\), \
+\\(95%\\)]\\)\"", 20, StripOnInput -> False], TraditionalForm], {0, 0}}, {
         62.25, 
          FormBox[
           TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {63.25, 
@@ -4737,8 +4696,8 @@ HL-LHC\"", 18, StripOnInput -> False],
           TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.008, 0}}, {58.25, 
          FormBox[
           StyleBox[
-          "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(visible\\), \
-\\(BSM\\)]\\)\"", 20, StripOnInput -> False], TraditionalForm], {0, 0}}, {
+          "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(unt.\\), \
+\\(95%\\)]\\)\"", 20, StripOnInput -> False], TraditionalForm], {0, 0}}, {
         62.25, 
          FormBox[
           TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {63.25, 
@@ -4963,31 +4922,6 @@ HL-LHC\"", 18, StripOnInput -> False],
         Log[100], 
         Directive[
          GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-Log[
-          Rational[10000, 11]], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-Log[
-          Rational[1000, 11]], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-Log[
-          Rational[100, 11]], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {
-        Log[
-         Rational[11, 10]], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {
-        Log[11], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {
-        Log[110], 
-        Directive[
-         GrayLevel[0.5], 
          Dashing[{Small, Small}]]}}}, {None, {{-9.210340371976184, 
         Directive[
          GrayLevel[0]]}, {-6.907755278982137, 
@@ -5160,24 +5094,6 @@ HL-LHC\"", 18, StripOnInput -> False],
         Directive[
          GrayLevel[0.5], 
          Dashing[{Small, Small}]]}, {4.605170185988092, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-6.812445099177812, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-4.509860006183766, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-2.207274913189721, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {0.09531017980432493, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {2.3978952727983707`, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {4.700480365792417, 
         Directive[
          GrayLevel[0.5], 
          Dashing[{Small, Small}]]}}}],
@@ -6154,8 +6070,8 @@ HL-LHC\"", 18, StripOnInput -> False],
            Spacer[0], {0.004`20., 0}}, {61., 
            Spacer[0], {0.008`20., 0}}, {58.25, 
            Style[
-           "\!\(\*SubsuperscriptBox[\(BR\), \(visible\), \(BSM\)]\)", 20], {0,
-            0}}, {62.25, 
+           "\!\(\*SubsuperscriptBox[\(BR\), \(unt.\), \(95%\)]\)", 20], {0, 
+           0}}, {62.25, 
            Spacer[0], {0.004`20., 0}}, {63.25, 
            Spacer[0], {0.004`20., 0}}, {64.25, 
            Spacer[0], {0.004`20., 0}}, {65.25, 
@@ -6373,31 +6289,6 @@ HL-LHC\"", 18, StripOnInput -> False],
           Log[100], 
           Directive[
            GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {-Log[
-            Rational[10000, 11]], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {-Log[
-            Rational[1000, 11]], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {-Log[
-            Rational[100, 11]], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {
-          Log[
-           Rational[11, 10]], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {
-          Log[11], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {
-          Log[110], 
-          Directive[
-           GrayLevel[0.5], 
            Dashing[{Small, Small}]]}}}, GridLinesStyle -> Directive[
         GrayLevel[0.5, 0.4]], ImageSize -> 1000, 
       PlotRange -> {{1, 66}, {0.1823215567939546, -Log[10000]}}, 
@@ -6542,9 +6433,9 @@ HL-LHC\"", 18, StripOnInput -> False],
    3.9069415525509043`*^9, {3.9069418020449996`*^9, 3.906941828033289*^9}, 
    3.90694189829473*^9, {3.906942059507454*^9, 3.9069421147535987`*^9}, 
    3.9069421871358056`*^9, {3.9069929351011972`*^9, 3.906992947488389*^9}, 
-   3.906995264124887*^9},
- CellLabel->
-  "Out[396]=",ExpressionUUID->"7e647b53-a10b-4aa8-a6bb-a3e719e3f6cd"],
+   3.906995264124887*^9, 3.907011886357234*^9, 3.907195723751172*^9, 
+   3.907260058249709*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"91b3b364-2865-4835-b738-9513f66d7f46"],
 
 Cell[BoxData[
  TagBox[
@@ -9778,8 +9669,8 @@ HL-LHC\"", 18, StripOnInput -> False],
           TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.008, 0}}, {58.25, 
          FormBox[
           StyleBox[
-          "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(visible\\), \
-\\(BSM\\)]\\)\"", 20, StripOnInput -> False], TraditionalForm], {0, 0}}, {
+          "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(unt.\\), \
+\\(95%\\)]\\)\"", 20, StripOnInput -> False], TraditionalForm], {0, 0}}, {
         62.25, 
          FormBox[
           TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {63.25, 
@@ -9973,8 +9864,8 @@ HL-LHC\"", 18, StripOnInput -> False],
           TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.008, 0}}, {58.25, 
          FormBox[
           StyleBox[
-          "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(visible\\), \
-\\(BSM\\)]\\)\"", 20, StripOnInput -> False], TraditionalForm], {0, 0}}, {
+          "\"\\!\\(\\*SubsuperscriptBox[\\(BR\\), \\(unt.\\), \
+\\(95%\\)]\\)\"", 20, StripOnInput -> False], TraditionalForm], {0, 0}}, {
         62.25, 
          FormBox[
           TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {63.25, 
@@ -10199,31 +10090,6 @@ HL-LHC\"", 18, StripOnInput -> False],
         Log[100], 
         Directive[
          GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-Log[
-          Rational[10000, 11]], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-Log[
-          Rational[1000, 11]], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-Log[
-          Rational[100, 11]], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {
-        Log[
-         Rational[11, 10]], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {
-        Log[11], 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {
-        Log[110], 
-        Directive[
-         GrayLevel[0.5], 
          Dashing[{Small, Small}]]}}}, {None, {{-9.210340371976184, 
         Directive[
          GrayLevel[0]]}, {-6.907755278982137, 
@@ -10398,24 +10264,6 @@ HL-LHC\"", 18, StripOnInput -> False],
          Dashing[{Small, Small}]]}, {4.605170185988092, 
         Directive[
          GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-6.812445099177812, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-4.509860006183766, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {-2.207274913189721, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {0.09531017980432493, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {2.3978952727983707`, 
-        Directive[
-         GrayLevel[0.5], 
-         Dashing[{Small, Small}]]}, {4.700480365792417, 
-        Directive[
-         GrayLevel[0.5], 
          Dashing[{Small, Small}]]}}}],
    GridLinesStyle->Directive[
      GrayLevel[0.5, 0.4]],
@@ -10441,6 +10289,7 @@ HL-LHC\"", 18, StripOnInput -> False],
              Tooltip[
               StatusArea[
                Charting`DelayedMouseEffect[
+                
                 Rectangle[{1.25, -Log[10000]}, {2.25, -4.257366745663519}, 
                  "RoundingRadius" -> 0], {"Style", 
                  EdgeForm[{
@@ -10477,7 +10326,6 @@ HL-LHC\"", 18, StripOnInput -> False],
              Tooltip[
               StatusArea[
                Charting`DelayedMouseEffect[
-                
                 Rectangle[{3.25, -Log[10000]}, {4.25, -5.490862880778283}, 
                  "RoundingRadius" -> 0], {"Style", 
                  EdgeForm[{
@@ -11592,6 +11440,7 @@ HL-LHC\"", 18, StripOnInput -> False],
              Tooltip[
               StatusArea[
                Charting`DelayedMouseEffect[
+                
                 Rectangle[{17.75, -Log[10000]}, {18.75, -3.8125839143341853`},
                   "RoundingRadius" -> 0], {"Style", 
                  EdgeForm[{
@@ -12155,7 +12004,6 @@ HL-LHC\"", 18, StripOnInput -> False],
              Tooltip[
               StatusArea[
                Charting`DelayedMouseEffect[
-                
                 Rectangle[{52.75, -Log[10000]}, {53.75, -6.571279783455108}, 
                  "RoundingRadius" -> 0], {"Style", 
                  EdgeForm[{
@@ -12450,8 +12298,8 @@ HL-LHC\"", 18, StripOnInput -> False],
            Spacer[0], {0.004`20., 0}}, {61., 
            Spacer[0], {0.008`20., 0}}, {58.25, 
            Style[
-           "\!\(\*SubsuperscriptBox[\(BR\), \(visible\), \(BSM\)]\)", 20], {0,
-            0}}, {62.25, 
+           "\!\(\*SubsuperscriptBox[\(BR\), \(unt.\), \(95%\)]\)", 20], {0, 
+           0}}, {62.25, 
            Spacer[0], {0.004`20., 0}}, {63.25, 
            Spacer[0], {0.004`20., 0}}, {64.25, 
            Spacer[0], {0.004`20., 0}}, {65.25, 
@@ -12669,31 +12517,6 @@ HL-LHC\"", 18, StripOnInput -> False],
           Log[100], 
           Directive[
            GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {-Log[
-            Rational[10000, 11]], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {-Log[
-            Rational[1000, 11]], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {-Log[
-            Rational[100, 11]], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {
-          Log[
-           Rational[11, 10]], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {
-          Log[11], 
-          Directive[
-           GrayLevel[0.5], 
-           Dashing[{Small, Small}]]}, {
-          Log[110], 
-          Directive[
-           GrayLevel[0.5], 
            Dashing[{Small, Small}]]}}}, GridLinesStyle -> Directive[
         GrayLevel[0.5, 0.4]], ImageSize -> 1000, 
       PlotRange -> {{1, 66}, {0.1823215567939546, -Log[10000]}}, 
@@ -12838,9 +12661,9 @@ HL-LHC\"", 18, StripOnInput -> False],
    3.9069415525509043`*^9, {3.9069418020449996`*^9, 3.906941828033289*^9}, 
    3.90694189829473*^9, {3.906942059507454*^9, 3.9069421147535987`*^9}, 
    3.9069421871358056`*^9, {3.9069929351011972`*^9, 3.906992947488389*^9}, 
-   3.9069952643158865`*^9},
- CellLabel->
-  "Out[397]=",ExpressionUUID->"4f04d541-7ce8-47f2-b06c-313547350bbf"]
+   3.906995264124887*^9, 3.907011886357234*^9, 3.907195723751172*^9, 
+   3.907260058452709*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"10c1f75e-1ba8-4db9-95b8-2783eada6a3c"]
 }, Open  ]]
 }, Open  ]],
 
@@ -23985,7 +23808,7 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1141.2, 580.8},
+WindowSize->{1141.2, 574.8},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (2022\:5e746\:670816\
 \:65e5)",
@@ -24005,38 +23828,38 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 204, 4, 67, "Section",ExpressionUUID->"e366c943-4c46-4ddf-bd5e-9d7496603816"],
-Cell[787, 28, 5657, 114, 561, "Input",ExpressionUUID->"61c5348f-eb3a-4ee0-a6c0-c3de5ce7db44"]
+Cell[787, 28, 5652, 113, 561, "Input",ExpressionUUID->"61c5348f-eb3a-4ee0-a6c0-c3de5ce7db44"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6481, 147, 153, 3, 98, "Title",ExpressionUUID->"00836439-7203-4ee8-8da9-8fb902941f15"],
+Cell[6476, 146, 153, 3, 98, "Title",ExpressionUUID->"00836439-7203-4ee8-8da9-8fb902941f15"],
 Cell[CellGroupData[{
-Cell[6659, 154, 356, 7, 54, "Subsection",ExpressionUUID->"5cf570f7-ffd8-434a-be77-8a3d56ed92f1"],
+Cell[6654, 153, 356, 7, 54, "Subsection",ExpressionUUID->"5cf570f7-ffd8-434a-be77-8a3d56ed92f1"],
 Cell[CellGroupData[{
-Cell[7040, 165, 7523, 177, 386, "Input",ExpressionUUID->"d4a67096-3e5a-4e4e-b7c3-57f142b29707"],
-Cell[14566, 344, 86952, 2180, 529, "Output",ExpressionUUID->"47912946-56d5-41d6-95ec-66795b307072"]
+Cell[7035, 164, 7691, 178, 386, "Input",ExpressionUUID->"d4a67096-3e5a-4e4e-b7c3-57f142b29707"],
+Cell[14729, 344, 85822, 2138, 529, "Output",ExpressionUUID->"08790a09-4e6e-4cf0-ae16-7883500e7abb"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[101567, 2530, 358, 7, 54, "Subsection",ExpressionUUID->"6847e85e-101a-494c-9811-abd3c7d59887"],
+Cell[100600, 2488, 358, 7, 54, "Subsection",ExpressionUUID->"6847e85e-101a-494c-9811-abd3c7d59887"],
 Cell[CellGroupData[{
-Cell[101950, 2541, 9250, 210, 533, "Input",ExpressionUUID->"8b081cc5-7f1b-466b-9208-266e5fd3cc86"],
-Cell[111203, 2753, 153214, 3793, 652, "Output",ExpressionUUID->"7e647b53-a10b-4aa8-a6bb-a3e719e3f6cd"],
-Cell[264420, 6548, 256520, 6294, 677, "Output",ExpressionUUID->"4f04d541-7ce8-47f2-b06c-313547350bbf"]
+Cell[100983, 2499, 9365, 211, 533, "Input",ExpressionUUID->"8b081cc5-7f1b-466b-9208-266e5fd3cc86"],
+Cell[110351, 2712, 151226, 3725, 652, "Output",ExpressionUUID->"91b3b364-2865-4835-b738-9513f66d7f46"],
+Cell[261580, 6439, 254530, 6226, 652, "Output",ExpressionUUID->"10c1f75e-1ba8-4db9-95b8-2783eada6a3c"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[520989, 12848, 344, 5, 54, "Subsection",ExpressionUUID->"9c74da23-3e9f-466c-a20c-0f305d7f50f1"],
+Cell[516159, 12671, 344, 5, 54, "Subsection",ExpressionUUID->"9c74da23-3e9f-466c-a20c-0f305d7f50f1"],
 Cell[CellGroupData[{
-Cell[521358, 12857, 7150, 170, 351, "Input",ExpressionUUID->"349aaec6-a876-41f1-9f17-64dbc32e378e"],
-Cell[528511, 13029, 78478, 1949, 529, "Output",ExpressionUUID->"fb0e72eb-fe62-40ad-bc95-6f11dd28c679"]
+Cell[516528, 12680, 7150, 170, 351, "Input",ExpressionUUID->"349aaec6-a876-41f1-9f17-64dbc32e378e"],
+Cell[523681, 12852, 78478, 1949, 529, "Output",ExpressionUUID->"fb0e72eb-fe62-40ad-bc95-6f11dd28c679"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[607038, 14984, 352, 5, 54, "Subsection",ExpressionUUID->"269f3101-056e-4e93-a8d8-1a54e41fdda4"],
+Cell[602208, 14807, 352, 5, 54, "Subsection",ExpressionUUID->"269f3101-056e-4e93-a8d8-1a54e41fdda4"],
 Cell[CellGroupData[{
-Cell[607415, 14993, 8228, 194, 495, "Input",ExpressionUUID->"5c1cfd95-5f99-4a6f-8057-01baac3584f2"],
-Cell[615646, 15189, 135384, 3356, 529, "Output",ExpressionUUID->"0c8d20b5-ef00-4c42-b26f-7e818b4c8232"],
-Cell[751033, 18547, 222258, 5435, 529, "Output",ExpressionUUID->"1e406036-8cc1-4f4b-83e7-459e61f7acae"]
+Cell[602585, 14816, 8228, 194, 495, "Input",ExpressionUUID->"5c1cfd95-5f99-4a6f-8057-01baac3584f2"],
+Cell[610816, 15012, 135384, 3356, 529, "Output",ExpressionUUID->"0c8d20b5-ef00-4c42-b26f-7e818b4c8232"],
+Cell[746203, 18370, 222258, 5435, 529, "Output",ExpressionUUID->"1e406036-8cc1-4f4b-83e7-459e61f7acae"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
