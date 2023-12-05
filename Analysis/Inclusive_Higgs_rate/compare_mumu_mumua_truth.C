@@ -28,10 +28,8 @@ void compare_mumu_mumua_truth(){
   
   //TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/mumu_bkg_beam_resolution.root");
   //TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_03/tag_7_delphes_events.root");
-  //TFile *f3plus = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_plus/tag_3_delphes_events.root");
-  //TFile *f3minus = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_minus/tag_4_delphes_events.root");
-  TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_03/tag_7_pythia8_events.root");
-  
+  //TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_03/tag_7_pythia8_events.root");
+  TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/10_TeV_1000000/tag_1_pythia8_events.root");
   //TFile *f4 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumua_bkg/Events/mumua_bkg_beam_resolution.root");
   //TFile *f4 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumua_bkg/Events/run_05/tag_2_delphes_events.root");
   //TFile *f4 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumua_bkg/Events/run_withshower/tag_1_delphes_events.root");
@@ -72,9 +70,13 @@ void compare_mumu_mumua_truth(){
   
   TH1F *ForwardMuon_sumPT_plot_mumu_bkg = new TH1F("Forwardmuon_sumPT_mumu_bkg","",50,0,80);
   
+  TH1F *ForwardMuon_sumPT_plot_mumua_bkg = new TH1F("Forwardmuon_sumPT_mumua_bkg","",50,0,80);
+
+
+
+  //TH1F *ForwardMuon_sumPT_plot_mumu_bkg = new TH1F("Forwardmuon_sumPT_mumu_bkg","",50,0,10);
   
-  
-  TH1F *ForwardMuon_sumPT_plot_mumua_bkg = new TH1F("Forwardmuon_sumPT_mumua_bkg","sumPT_mumua_bkg",50,0,80);
+  //TH1F *ForwardMuon_sumPT_plot_mumua_bkg = new TH1F("Forwardmuon_sumPT_mumua_bkg","",50,0,10);
   
   
   
@@ -156,9 +158,10 @@ void compare_mumu_mumua_truth(){
   
   //////////////////////////mumu_bkg//////////////////////////////////////////////////////////////////////
   //double weight_mumu=11150.0/133333.0;
-  double weight_mumu=11150.0/200000.0;
+  double weight_mumu=11150.0/1000000.0;
   for (int i=0; i<entries3; ++i){
     b3->GetEntry(i);
+    int particle_length = b3->GetLeaf("Particle_status")->GetLen();
     TLorentzVector Initial;
     TLorentzVector Muon1;
     TLorentzVector Muon2;
@@ -172,7 +175,7 @@ void compare_mumu_mumua_truth(){
     double Muon_Emin=-999;
     Initial.SetPxPyPzE(0,0,0,10000);
     
-    for (int j=2; j<50; ++j){
+    for (int j=2; j<particle_length-1; ++j){
         if(Particle_status[2]==1&&Particle_status[3]==1){
             muon_plus=2;
             muon_minus=3;
@@ -372,7 +375,7 @@ void compare_mumu_mumua_truth(){
   
   
   // draw plot
-  gStyle->SetPadLeftMargin(0.15); gStyle->SetPadBottomMargin(0.15);
+  gStyle->SetPadLeftMargin(0.17); gStyle->SetPadRightMargin(0.05); gStyle->SetPadBottomMargin(0.15);
   gStyle->SetTitleFont(132, "xyz"); 
   gStyle->SetLabelFont(132, "xyz"); 
   gStyle->SetTextFont(132); 
@@ -392,19 +395,21 @@ void compare_mumu_mumua_truth(){
   
   ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetTitle("p_{T}(#mu#mu)[GeV]");
   ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetTitle("d#sigma/dp_{T}(#mu#mu)[pb/GeV]");
-  ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetLabelSize(0.06);
   //ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetRangeUser(0,150);
   ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetRangeUser(0.05,1000);
   
   ForwardMuon_sumPT_plot_mumu_bkg->Draw("HIST");
   ForwardMuon_sumPT_plot_mumua_bkg->Draw("same" "HIST");
   
-  TLegend *l4 = new TLegend(0.7,0.75,0.9,0.9);
+  TLegend *l4 = new TLegend(0.75,0.75,0.95,0.9);
   l4->AddEntry(ForwardMuon_sumPT_plot_mumu_bkg,"#mu#mu","l");
   l4->AddEntry(ForwardMuon_sumPT_plot_mumua_bkg,"#mu#mu#gamma","l");
+  l4->SetTextFont(132);
+  l4->SetTextSize(0.05);
   l4->Draw();
   
   c4->SetLogy();
@@ -413,14 +418,9 @@ void compare_mumu_mumua_truth(){
   c4->SetGridx();
   //c4->SetGridy();
   
-  
   c4->SaveAs("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/plot_macro/output_plot/truth_level/SumPT_mumu_mumua_truth.pdf");
+  //c4->SaveAs("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/plot_macro/output_plot/truth_level/SumPT_mumu_mumua_truth_zoom_in.pdf");
   
-  /*TCanvas *c1 = new TCanvas();
-  AllResolved_onShellWboson_Pt->DrawNormalized();
-  AllResolved_onShellZboson_Pt->DrawNormalized("same");
-  c1->SaveAs("/afs/cern.ch/user/l/lipe/private/HHtoWWgg/CMSSW_10_2_22/src/GEN-SIM-analyzer/GenAnalyzer/Plotting-Macro/makeplot/node1/AK4onShellWboson_Pt.png");
   
-  */
   
 }

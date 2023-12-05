@@ -376,7 +376,7 @@ void compare_mumu_mumua(){
   
   
   // draw plot
-  gStyle->SetPadLeftMargin(0.15); gStyle->SetPadBottomMargin(0.15);
+  gStyle->SetPadLeftMargin(0.17); gStyle->SetPadRightMargin(0.05); gStyle->SetPadBottomMargin(0.15);
   gStyle->SetTitleFont(132, "xyz"); 
   gStyle->SetLabelFont(132, "xyz"); 
   gStyle->SetTextFont(132); 
@@ -399,19 +399,21 @@ void compare_mumu_mumua(){
   
   ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetTitle("p_{T}(#mu#mu)[GeV]");
   ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetTitle("d#sigma/dp_{T}(#mu#mu)[pb/GeV]");
-  ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_sumPT_plot_mumu_bkg->GetXaxis()->SetRangeUser(-10,250);
   ForwardMuon_sumPT_plot_mumu_bkg->GetYaxis()->SetRangeUser(0.01,1000);
   
   ForwardMuon_sumPT_plot_mumu_bkg->Draw("HIST");
   ForwardMuon_sumPT_plot_mumua_bkg->Draw("same" "HIST");
   
-  TLegend *l4 = new TLegend(0.7,0.75,0.9,0.9);
+  TLegend *l4 = new TLegend(0.75,0.75,0.95,0.9);
   l4->AddEntry(ForwardMuon_sumPT_plot_mumu_bkg,"#mu#mu","l");
   l4->AddEntry(ForwardMuon_sumPT_plot_mumua_bkg,"#mu#mu#gamma","l");
+  l4->SetTextFont(132);
+  l4->SetTextSize(0.05);
   l4->Draw();
   
   c4->SetLogy();

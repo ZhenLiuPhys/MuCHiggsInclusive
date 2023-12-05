@@ -85,9 +85,9 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   // TH1F *plotvariable_for_code = new TH1F("plot_name","plot_title",nbins,xlow,xup);
   TH1F *ForwardMuon_Eta_plot_signal = new TH1F("Forwardmuon_Eta_signal","",100,-10,10);
   TH1F *ForwardMuon_E_plot_signal = new TH1F("Forwardmuon_E_signal","",25,-10,8000);
-  TH1F *ForwardMuon_PT_plot_signal = new TH1F("Forwardmuon_PT_signal","",25,-10,1000);
+  TH1F *ForwardMuon_PT_plot_signal = new TH1F("Forwardmuon_PT_signal","",25,0,1000);
   TH1F *ForwardMuon_sumPT_plot_signal = new TH1F("Forwardmuon_sumPT_signal","",50,-10,250);
-  TH1F *ForwardMuon_Emin_plot_signal = new TH1F("Forwardmuon_Emin_signal","",25,-10,8000);
+  TH1F *ForwardMuon_Emin_plot_signal = new TH1F("Forwardmuon_Emin_signal","",25,0,8);
   //TH2F *ForwardMuon_E_2d_plot_signal = new TH2F("Forwardmuon_E_2d_signal","",50,-10,8000,50,-10,8000);
   
   /*TH1F *ForwardMuon_Eta_plot_mumu_bkg = new TH1F("Forwardmuon_Eta_mumu_bkg","Forwardmuon_Eta_mumu_bkg",50,-10,10);
@@ -102,16 +102,16 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   
   TH1F *ForwardMuon_Eta_plot_ww_bkg = new TH1F("Forwardmuon_Eta_ww_bkg","",100,-10,10);
   TH1F *ForwardMuon_E_plot_ww_bkg = new TH1F("Forwardmuon_E_ww_bkg","",25,-10,8000);
-  TH1F *ForwardMuon_PT_plot_ww_bkg = new TH1F("Forwardmuon_PT_ww_bkg","",25,-10,1000);
+  TH1F *ForwardMuon_PT_plot_ww_bkg = new TH1F("Forwardmuon_PT_ww_bkg","",25,0,1000);
   TH1F *ForwardMuon_sumPT_plot_ww_bkg = new TH1F("Forwardmuon_sumPT_ww_bkg","",50,-10,250);
-  TH1F *ForwardMuon_Emin_plot_ww_bkg = new TH1F("Forwardmuon_Emin_ww_bkg","",25,-10,8000);
+  TH1F *ForwardMuon_Emin_plot_ww_bkg = new TH1F("Forwardmuon_Emin_ww_bkg","",25,0,8);
   
   
   TH1F *ForwardMuon_Eta_plot_mumua_bkg = new TH1F("Forwardmuon_Eta_mumua_bkg","",100,-10,10);
   TH1F *ForwardMuon_E_plot_mumua_bkg = new TH1F("Forwardmuon_E_mumua_bkg","",25,-10,8000);
-  TH1F *ForwardMuon_PT_plot_mumua_bkg = new TH1F("Forwardmuon_PT_mumua_bkg","",25,-10,1000);
+  TH1F *ForwardMuon_PT_plot_mumua_bkg = new TH1F("Forwardmuon_PT_mumua_bkg","",25,0,1000);
   TH1F *ForwardMuon_sumPT_plot_mumua_bkg = new TH1F("Forwardmuon_sumPT_mumua_bkg","",50,-10,250);
-  TH1F *ForwardMuon_Emin_plot_mumua_bkg = new TH1F("Forwardmuon_Emin_mumua_bkg","",25,-10,8000);
+  TH1F *ForwardMuon_Emin_plot_mumua_bkg = new TH1F("Forwardmuon_Emin_mumua_bkg","",25,0,8);
   
   /*TH1F *ForwardMuon_Eta_plot_vmvm_bkg = new TH1F("Forwardmuon_Eta_vmvm_bkg","Forwardmuon_Eta_vmvm_bkg",50,-10,10);
   TH1F *ForwardMuon_E_plot_vmvm_bkg = new TH1F("Forwardmuon_E_vmvm_bkg","Forwardmuon_E_vmvm_bkg",25,-10,8000);
@@ -127,23 +127,23 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   
   TH1F *ForwardMuon_Eta_plot_ff_bkg = new TH1F("Forwardmuon_Eta_ff_bkg","",50,-10,10);
   TH1F *ForwardMuon_E_plot_ff_bkg = new TH1F("Forwardmuon_E_ff_bkg","",25,-10,10000);
-  TH1F *ForwardMuon_PT_plot_ff_bkg = new TH1F("Forwardmuon_PT_ff_bkg","",25,-10,1000);
+  TH1F *ForwardMuon_PT_plot_ff_bkg = new TH1F("Forwardmuon_PT_ff_bkg","",25,0,1000);
   TH1F *ForwardMuon_sumPT_plot_ff_bkg = new TH1F("Forwardmuon_sumPT_ff_bkg","",50,-10,250);
-  TH1F *ForwardMuon_Emin_plot_ff_bkg = new TH1F("Forwardmuon_Emin_ff_bkg","",25,-10,8000);
+  TH1F *ForwardMuon_Emin_plot_ff_bkg = new TH1F("Forwardmuon_Emin_ff_bkg","",25,0,8);
   
   
   
   
   
-  TH1F *Higgs_mass_plot_signal = new TH1F("Higgs_mass_signal","",50,-5000,5000);
+  TH1F *Higgs_mass_plot_signal = new TH1F("Higgs_mass_signal","",200,-20,20);
   //TH1F *Higgs_mass_plot_jj_bkg = new TH1F("Higgs_mass_jj_bkg","Higgs_mass_jj_bkg",50,-5000,5000);
-  TH1F *Higgs_mass_plot_ww_bkg = new TH1F("Higgs_mass_ww_bkg","",50,-5000,5000);
+  TH1F *Higgs_mass_plot_ww_bkg = new TH1F("Higgs_mass_ww_bkg","",100,-10,10);
   //TH1F *Higgs_mass_plot_mumu_bkg = new TH1F("Higgs_mass_mumu_bkg","Higgs_mass_mumu_bkg",50,-5000,5000);
-  TH1F *Higgs_mass_plot_mumua_bkg = new TH1F("Higgs_mass_mumua_bkg","",50,-5000,5000);
+  TH1F *Higgs_mass_plot_mumua_bkg = new TH1F("Higgs_mass_mumua_bkg","",100,-10,10);
   //TH1F *Higgs_mass_plot_vmvm_bkg = new TH1F("Higgs_mass_vmvm_bkg","Higgs_mass_vmvm_bkg",50,-5000,5000);
   //TH1F *Higgs_mass_plot_ee_bkg = new TH1F("Higgs_mass_ee_bkg","Higgs_mass_ee_bkg",50,-5000,5000);
   //TH1F *Higgs_mass_plot_total_bkg = new TH1F("Higgs_mass_total_bkg","",50,-5000,5000);
-  TH1F *Higgs_mass_plot_ff_bkg = new TH1F("Higgs_mass_ff_bkg","",50,-5000,5000);
+  TH1F *Higgs_mass_plot_ff_bkg = new TH1F("Higgs_mass_ff_bkg","",100,-10,10);
   
   
 	
@@ -215,29 +215,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   s1->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
   s1->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  /*s1plus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  s1plus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  s1plus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  s1plus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  s1plus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  s1plus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  s1plus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  s1plus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  s1plus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  s1plus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  s1plus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  s1minus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  s1minus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  s1minus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  s1minus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  s1minus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  s1minus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  s1minus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  s1minus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  s1minus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  s1minus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  s1minus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);*/
   
   b1->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
   b1->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
@@ -251,29 +229,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   b1->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
   b1->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  /*b1plus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b1plus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b1plus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b1plus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b1plus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  b1plus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  b1plus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  b1plus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  b1plus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  b1plus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  b1plus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  b1minus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b1minus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b1minus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b1minus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b1minus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  b1minus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  b1minus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  b1minus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  b1minus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  b1minus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  b1minus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);*/
   
   b2->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
   b2->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
@@ -287,29 +243,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   b2->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
   b2->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  /*b2plus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b2plus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b2plus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b2plus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b2plus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  b2plus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  b2plus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  b2plus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  b2plus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  b2plus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  b2plus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  b2minus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b2minus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b2minus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b2minus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b2minus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  b2minus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  b2minus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  b2minus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  b2minus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  b2minus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  b2minus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);*/
   
   /*b3->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
   b3->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
@@ -323,29 +257,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   b3->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
   b3->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  b3plus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b3plus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b3plus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b3plus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b3plus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  b3plus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  b3plus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  b3plus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  b3plus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  b3plus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  b3plus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
-  
-  b3minus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b3minus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b3minus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b3minus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b3minus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  b3minus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  b3minus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  b3minus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  b3minus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  b3minus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  b3minus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);*/
+  */
   
   b4->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
   b4->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
@@ -359,29 +271,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   b4->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
   b4->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  /*b4plus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b4plus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b4plus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b4plus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b4plus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  b4plus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  b4plus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  b4plus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  b4plus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  b4plus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  b4plus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);
   
-  b4minus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b4minus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b4minus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b4minus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b4minus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
-  b4minus->SetBranchAddress("Electron_size", &Electron_size, &b_Electron_size);
-  b4minus->SetBranchAddress("KTjet.PT", KTjet_PT, &b_KTjet_PT);
-  b4minus->SetBranchAddress("KTjet.Eta", KTjet_Eta, &b_KTjet_Eta);
-  b4minus->SetBranchAddress("KTjet.Phi", KTjet_Phi, &b_KTjet_Phi);
-  b4minus->SetBranchAddress("KTjet.Mass", KTjet_Mass, &b_KTjet_Mass);
-  b4minus->SetBranchAddress("KTjet_size", &KTjet_size, &b_KTjet_size);*/
   
   b5->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
   b5->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
@@ -389,17 +279,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   b5->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
   b5->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
   
-  /*b5plus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b5plus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b5plus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b5plus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b5plus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
   
-  b5minus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b5minus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b5minus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b5minus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b5minus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);*/
   
   b6->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
   b6->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
@@ -407,17 +287,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   b6->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
   b6->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
   
-  /*b6plus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b6plus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b6plus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b6plus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b6plus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);
   
-  b6minus->SetBranchAddress("ForwardMuon.PT", ForwardMuon_PT, &b_ForwardMuon_PT);
-  b6minus->SetBranchAddress("ForwardMuon.Eta", ForwardMuon_Eta, &b_ForwardMuon_Eta);
-  b6minus->SetBranchAddress("ForwardMuon.Phi", ForwardMuon_Phi, &b_ForwardMuon_Phi);
-  b6minus->SetBranchAddress("ForwardMuon_size", &ForwardMuon_size, &b_ForwardMuon_size);
-  b6minus->SetBranchAddress("Muon_size", &Muon_size, &b_Muon_size);*/
   
   
   
@@ -530,7 +400,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                 
                     if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E();}
                     if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();}
-                    ForwardMuon_Emin_plot_signal->Fill(Muon_Emin,weight_signal);
+                    ForwardMuon_Emin_plot_signal->Fill(Muon_Emin/1000.0,weight_signal);
                     //ForwardMuon_E_2d_plot_signal->Fill(Muon1.E(),Muon2.E(),weight_signal);
                 
                     if(Muon_Emin > 3000){
@@ -539,7 +409,8 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                         if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();Muon_Ptmin=Muon2.Pt(); ForwardMuon_PT_plot_signal->Fill(Muon2.Pt(),weight_signal);}
                         ForwardMuon_Eta_plot_signal->Fill(Muon1.Eta(),weight_signal);
                         ForwardMuon_Eta_plot_signal->Fill(Muon2.Eta(),weight_signal);
-                        Higgs_mass_plot_signal->Fill(Higgs_mass,weight_signal);
+                        Higgs_mass_plot_signal->Fill(Higgs_mass/1000.0,weight_signal);
+                        
                         if(Muon_Ptmin<300){
                             countnumber_signal[6]=countnumber_signal[6]+1;
                         }
@@ -629,7 +500,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                     if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E();}
                     if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();}
                     
-                    ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin,weight_jj);
+                    ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin/1000.0,weight_jj);
                     //ForwardMuon_E_2d_plot_total_bkg->Fill(Muon1.E(),Muon2.E(),weight_jj);
                 
                     if(Muon_Emin > 3000){
@@ -638,7 +509,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                         if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();Muon_Ptmin=Muon2.Pt(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon2.Pt(),weight_jj);}
                         ForwardMuon_Eta_plot_ff_bkg->Fill(Muon1.Eta(),weight_jj);
                         ForwardMuon_Eta_plot_ff_bkg->Fill(Muon2.Eta(),weight_jj);
-                        Higgs_mass_plot_ff_bkg->Fill(Higgs_mass,weight_jj);
+                        Higgs_mass_plot_ff_bkg->Fill(Higgs_mass/1000.0,weight_jj);
                         if(Muon_Ptmin<300){
                             countnumber_jj_bkg[6]=countnumber_jj_bkg[6]+1;
                         }
@@ -722,7 +593,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                 
                     if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E();}
                     if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();}
-                    ForwardMuon_Emin_plot_ww_bkg->Fill(Muon_Emin,weight_ww);
+                    ForwardMuon_Emin_plot_ww_bkg->Fill(Muon_Emin/1000.0,weight_ww);
                     //ForwardMuon_E_2d_plot_total_bkg->Fill(Muon1.E(),Muon2.E(),weight_ww);
                 
                     if(Muon_Emin > 3000){
@@ -731,7 +602,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                         if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();Muon_Ptmin=Muon2.Pt(); ForwardMuon_PT_plot_ww_bkg->Fill(Muon2.Pt(),weight_ww);}
                         ForwardMuon_Eta_plot_ww_bkg->Fill(Muon1.Eta(),weight_ww);
                         ForwardMuon_Eta_plot_ww_bkg->Fill(Muon2.Eta(),weight_ww);
-                        Higgs_mass_plot_ww_bkg->Fill(Higgs_mass,weight_ww);
+                        Higgs_mass_plot_ww_bkg->Fill(Higgs_mass/1000.0,weight_ww);
                         if(Muon_Ptmin<300){
                             countnumber_ww_bkg[6]=countnumber_ww_bkg[6]+1;
                         }
@@ -884,7 +755,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                 
                     if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E();}
                     if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();}
-                    ForwardMuon_Emin_plot_mumua_bkg->Fill(Muon_Emin,weight_mumua);
+                    ForwardMuon_Emin_plot_mumua_bkg->Fill(Muon_Emin/1000.0,weight_mumua);
                     //ForwardMuon_E_2d_plot_total_bkg->Fill(Muon1.E(),Muon2.E(),weight_mumua);
                 
                     if(Muon_Emin > 3000){
@@ -893,7 +764,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                         if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();Muon_Ptmin=Muon2.Pt(); ForwardMuon_PT_plot_mumua_bkg->Fill(Muon2.Pt(),weight_mumua);}
                         ForwardMuon_Eta_plot_mumua_bkg->Fill(Muon1.Eta(),weight_mumua);
                         ForwardMuon_Eta_plot_mumua_bkg->Fill(Muon2.Eta(),weight_mumua);
-                        Higgs_mass_plot_mumua_bkg->Fill(Higgs_mass,weight_mumua);
+                        Higgs_mass_plot_mumua_bkg->Fill(Higgs_mass/1000.0,weight_mumua);
                         if(Muon_Ptmin<300){
                             countnumber_mumua_bkg[6]=countnumber_mumua_bkg[6]+1;
                         }
@@ -976,7 +847,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                     if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E();}
                     if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();}
                     //ForwardMuon_Emin_plot_total_bkg->Fill(Muon_Emin,weight_vmvm);
-                    ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin,weight_vmvm);
+                    ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin/1000.0,weight_vmvm);
                     //ForwardMuon_E_2d_plot_total_bkg->Fill(Muon1.E(),Muon2.E(),weight_vmvm);
                     
                     if(Muon_Emin > 3000){
@@ -985,7 +856,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                         if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();Muon_Ptmin=Muon2.Pt(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon2.Pt(),weight_vmvm);}
                         ForwardMuon_Eta_plot_ff_bkg->Fill(Muon1.Eta(),weight_vmvm);
                         ForwardMuon_Eta_plot_ff_bkg->Fill(Muon2.Eta(),weight_vmvm);
-                        Higgs_mass_plot_ff_bkg->Fill(Higgs_mass,weight_vmvm);
+                        Higgs_mass_plot_ff_bkg->Fill(Higgs_mass/1000.0,weight_vmvm);
                         if(Muon_Ptmin<300){
                             countnumber_vmvm_bkg[6]=countnumber_vmvm_bkg[6]+1;
                         }
@@ -1071,7 +942,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                     if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E();}
                     if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();}
                     
-                    ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin,weight_ee);
+                    ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin/1000.0,weight_ee);
                     //ForwardMuon_E_2d_plot_total_bkg->Fill(Muon1.E(),Muon2.E(),weight_ee);
                     
                     if(Muon_Emin > 3000){
@@ -1080,7 +951,7 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
                         if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E();Muon_Ptmin=Muon2.Pt(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon2.Pt(),weight_ee);}
                         ForwardMuon_Eta_plot_ff_bkg->Fill(Muon1.Eta(),weight_ee);
                         ForwardMuon_Eta_plot_ff_bkg->Fill(Muon2.Eta(),weight_ee);
-                        Higgs_mass_plot_ff_bkg->Fill(Higgs_mass,weight_ee);
+                        Higgs_mass_plot_ff_bkg->Fill(Higgs_mass/1000.0,weight_ee);
                         if(Muon_Ptmin<300){
                             countnumber_ee_bkg[6]=countnumber_ee_bkg[6]+1;
                         }
@@ -1175,10 +1046,11 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   
   
   // draw plot
-  gStyle->SetPadLeftMargin(0.15); gStyle->SetPadBottomMargin(0.15);
+  gStyle->SetPadLeftMargin(0.17); gStyle->SetPadRightMargin(0.05); gStyle->SetPadBottomMargin(0.15);
   gStyle->SetTitleFont(132, "xyz"); 
   gStyle->SetLabelFont(132, "xyz"); 
   gStyle->SetTextFont(132); 
+  //gStyle->SetHistMinimumZero();
   
   TColor *mumua_color = new TColor(9001,0.317647, 0.654902, 0.752941); 
   TColor *ff_color = new TColor(9002,0.705882, 0.494118, 0.545098); 
@@ -1199,10 +1071,10 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   
   ForwardMuon_Eta_plot_mumua_bkg->GetXaxis()->SetTitle("#eta(#mu)");
   ForwardMuon_Eta_plot_mumua_bkg->GetYaxis()->SetTitle("d#sigma/d#eta(#mu)[pb]");
-  ForwardMuon_Eta_plot_mumua_bkg->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_Eta_plot_mumua_bkg->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_Eta_plot_mumua_bkg->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_Eta_plot_mumua_bkg->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_Eta_plot_mumua_bkg->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_Eta_plot_mumua_bkg->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_Eta_plot_mumua_bkg->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_Eta_plot_mumua_bkg->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_Eta_plot_mumua_bkg->GetXaxis()->SetTitleFont(132);
   ForwardMuon_Eta_plot_mumua_bkg->GetYaxis()->SetTitleFont(132);
   ForwardMuon_Eta_plot_mumua_bkg->GetYaxis()->SetRangeUser(0.0001,1);
@@ -1212,12 +1084,13 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   ForwardMuon_Eta_plot_ff_bkg->Draw("same" "HIST");
   ForwardMuon_Eta_plot_ww_bkg->Draw("same" "HIST");
   
-  TLegend *l110 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l110 = new TLegend(0.76,0.65,0.95,0.90);
   l110->AddEntry(ForwardMuon_Eta_plot_signal,"#mu#muh","l");
   l110->AddEntry(ForwardMuon_Eta_plot_ff_bkg,"#mu#muff","l");
   l110->AddEntry(ForwardMuon_Eta_plot_ww_bkg,"#mu#muww","l");
   l110->AddEntry(ForwardMuon_Eta_plot_mumua_bkg,"#mu#mu#gamma","l");
   l110->SetTextFont(132);
+  l110->SetTextSize(0.05);
   l110->Draw();
   
   
@@ -1229,43 +1102,6 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   c110->SaveAs("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/plot_macro/output_plot/reco_level_morecut/ForwardMuon_Eta.pdf");
   
   
-  TCanvas *c120 = new TCanvas();
-  
-  ForwardMuon_E_plot_mumua_bkg->SetStats(0);
-  
-  ForwardMuon_E_plot_signal->SetLineColor(2);
-  ForwardMuon_E_plot_ff_bkg->SetLineColor(1);
-  ForwardMuon_E_plot_ww_bkg->SetLineColor(6);
-  ForwardMuon_E_plot_mumua_bkg->SetLineColor(4);
-  ForwardMuon_E_plot_signal->SetLineWidth(3);
-  
-  ForwardMuon_E_plot_mumua_bkg->GetXaxis()->SetTitle("E(#mu)[GeV]");
-  ForwardMuon_E_plot_mumua_bkg->GetYaxis()->SetTitle("d#sigma/dE(#mu)[pb/GeV]");
-  ForwardMuon_E_plot_mumua_bkg->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_E_plot_mumua_bkg->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_E_plot_mumua_bkg->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_E_plot_mumua_bkg->GetYaxis()->SetLabelSize(0.04);
-  ForwardMuon_E_plot_mumua_bkg->GetYaxis()->SetRangeUser(0.0001,1);
-  
-  ForwardMuon_E_plot_mumua_bkg->Draw("HIST");
-  ForwardMuon_E_plot_signal->Draw("same" "HIST");
-  ForwardMuon_E_plot_ff_bkg->Draw("same" "HIST");
-  ForwardMuon_E_plot_ww_bkg->Draw("same" "HIST");
-  
-  TLegend *l120 = new TLegend(0.72,0.72,0.9,0.9);
-  l120->AddEntry(ForwardMuon_E_plot_signal,"#mu#muh","l");
-  l120->AddEntry(ForwardMuon_E_plot_ff_bkg,"#mu#muff","l");
-  l120->AddEntry(ForwardMuon_E_plot_ww_bkg,"#mu#muww","l");
-  l120->AddEntry(ForwardMuon_E_plot_mumua_bkg,"#mu#mu#gamma","l");
-  
-  l120->Draw();
-  
-  c120->SetLogy();
-  c120->SetTickx();
-  c120->SetTicky();
-  c120->SetGridx();
-  
-  c120->SaveAs("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/plot_macro/output_plot/reco_level_morecut/ForwardMuon_E.png");
   
   
   TCanvas *c130 = new TCanvas();
@@ -1283,10 +1119,10 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   
   ForwardMuon_PT_plot_mumua_bkg->GetXaxis()->SetTitle("p_{T,min}(#mu)[GeV]");
   ForwardMuon_PT_plot_mumua_bkg->GetYaxis()->SetTitle("d#sigma/dp_{T,min}(#mu)[pb/GeV]");
-  ForwardMuon_PT_plot_mumua_bkg->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_PT_plot_mumua_bkg->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_PT_plot_mumua_bkg->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_PT_plot_mumua_bkg->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_PT_plot_mumua_bkg->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_PT_plot_mumua_bkg->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_PT_plot_mumua_bkg->GetXaxis()->SetLabelSize(0.055);
+  ForwardMuon_PT_plot_mumua_bkg->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_PT_plot_mumua_bkg->GetXaxis()->SetTitleFont(132);
   ForwardMuon_PT_plot_mumua_bkg->GetYaxis()->SetTitleFont(132);
   ForwardMuon_PT_plot_mumua_bkg->GetYaxis()->SetRangeUser(0.0001,2);
@@ -1296,12 +1132,13 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   ForwardMuon_PT_plot_ww_bkg->Draw("same" "HIST");
   ForwardMuon_PT_plot_signal->Draw("same" "HIST");
   
-  TLegend *l130 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l130 = new TLegend(0.76,0.65,0.95,0.90);
   l130->AddEntry(ForwardMuon_PT_plot_signal,"#mu#muh","l");
   l130->AddEntry(ForwardMuon_PT_plot_ff_bkg,"#mu#muff","l");
   l130->AddEntry(ForwardMuon_PT_plot_ww_bkg,"#mu#muww","l");
   l130->AddEntry(ForwardMuon_PT_plot_mumua_bkg,"#mu#mu#gamma","l");
   l130->SetTextFont(132);
+  l130->SetTextSize(0.05);
   l130->Draw();
   
   
@@ -1329,28 +1166,30 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   Higgs_mass_plot_mumua_bkg->SetLineWidth(2);
   Higgs_mass_plot_signal->SetLineWidth(3);
   
-  Higgs_mass_plot_mumua_bkg->GetXaxis()->SetTitle("M_{recoil}[GeV]");
-  Higgs_mass_plot_mumua_bkg->GetYaxis()->SetTitle("d#sigma/dM_{recoil}[pb/GeV]");
-  Higgs_mass_plot_mumua_bkg->GetXaxis()->SetTitleSize(0.05);
-  Higgs_mass_plot_mumua_bkg->GetYaxis()->SetTitleSize(0.05);
-  Higgs_mass_plot_mumua_bkg->GetXaxis()->SetLabelSize(0.04);
-  Higgs_mass_plot_mumua_bkg->GetYaxis()->SetLabelSize(0.04);
-  Higgs_mass_plot_mumua_bkg->GetXaxis()->SetTitleFont(132);
-  Higgs_mass_plot_mumua_bkg->GetYaxis()->SetTitleFont(132);
-  Higgs_mass_plot_mumua_bkg->GetYaxis()->SetRangeUser(0.0001,0.5);
+  Higgs_mass_plot_signal->GetXaxis()->SetTitle("M_{recoil}[TeV]");
+  Higgs_mass_plot_signal->GetYaxis()->SetTitle("d#sigma/dM_{recoil}[pb/TeV]");
+  Higgs_mass_plot_signal->GetXaxis()->SetTitleSize(0.07);
+  Higgs_mass_plot_signal->GetYaxis()->SetTitleSize(0.07);
+  Higgs_mass_plot_signal->GetXaxis()->SetLabelSize(0.06);
+  Higgs_mass_plot_signal->GetYaxis()->SetLabelSize(0.06);
+  Higgs_mass_plot_signal->GetXaxis()->SetTitleFont(132);
+  Higgs_mass_plot_signal->GetYaxis()->SetTitleFont(132);
+  Higgs_mass_plot_signal->GetXaxis()->SetRangeUser(-4.5,4.5);
+  Higgs_mass_plot_signal->GetYaxis()->SetRangeUser(0.0001,0.5);
   
   //Higgs_mass_plot_mumu_bkg->DrawNormalized();
-  Higgs_mass_plot_mumua_bkg->Draw("HIST");
+  Higgs_mass_plot_signal->Draw("HIST");
   Higgs_mass_plot_ff_bkg->Draw("same" "HIST");
   Higgs_mass_plot_ww_bkg->Draw("same" "HIST");
-  Higgs_mass_plot_signal->Draw("same" "HIST");
+  Higgs_mass_plot_mumua_bkg->Draw("same" "HIST");
   
-  TLegend *l3 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l3 = new TLegend(0.76,0.65,0.95,0.90);
   l3->AddEntry(Higgs_mass_plot_signal,"#mu#muh","l");
   l3->AddEntry(Higgs_mass_plot_ff_bkg,"#mu#muff","l");
   l3->AddEntry(Higgs_mass_plot_ww_bkg,"#mu#muww","l");
   l3->AddEntry(Higgs_mass_plot_mumua_bkg,"#mu#mu#gamma","l");
   l3->SetTextFont(132);
+  l3->SetTextSize(0.05);
   l3->Draw();
   
   c3->SetLogy();
@@ -1377,12 +1216,12 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   ForwardMuon_Emin_plot_signal->SetLineWidth(3);
   
   
-  ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitle("E_{min}(#mu)[GeV]");
-  ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitle("d#sigma/dE_{min}(#mu)[pb/GeV]");
-  ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_Emin_plot_signal->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_Emin_plot_signal->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitle("E_{min}(#mu)[TeV]");
+  ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitle("d#sigma/dE_{min}(#mu)[pb/TeV]");
+  ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_Emin_plot_signal->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_Emin_plot_signal->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitleFont(132);
   ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitleFont(132);
   ForwardMuon_Emin_plot_signal->GetYaxis()->SetRangeUser(0.0001,1);
@@ -1393,12 +1232,13 @@ void HZZ_plot_analysis_beam_resolution_morecut(){
   
   
   
-  TLegend *l10 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l10 = new TLegend(0.76,0.65,0.95,0.90);
   l10->AddEntry(ForwardMuon_Emin_plot_signal,"#mu#muh","l");
   l10->AddEntry(ForwardMuon_Emin_plot_ff_bkg,"#mu#muff","l");
   l10->AddEntry(ForwardMuon_Emin_plot_ww_bkg,"#mu#muww","l");
   l10->AddEntry(ForwardMuon_Emin_plot_mumua_bkg,"#mu#mu#gamma","l");
   l10->SetTextFont(132);
+  l10->SetTextSize(0.05);
   l10->Draw();
   
   

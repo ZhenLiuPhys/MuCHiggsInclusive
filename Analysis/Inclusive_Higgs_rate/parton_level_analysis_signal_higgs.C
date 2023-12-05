@@ -40,7 +40,7 @@ void parton_level_analysis_signal_higgs(){
   TH1F *ForwardMuon_sumPT_plot_signal = new TH1F("Forwardmuon_sumPT_signal","",30,-30,350);
   TH1F *ForwardMuon_Emin_plot_signal = new TH1F("Forwardmuon_Emin_signal","",30,0,7000);
   
-  TH1F *Higgs_Pt_plot = new TH1F("Higgs_Pt_signal","",100,0,800);
+  TH1F *Higgs_Pt_plot = new TH1F("Higgs_Pt_signal","",50,0,800);
   TH1F *Higgs_Eta_plot = new TH1F("Higgs_Eta_signal","",50,-11,11);
   TH1F *Higgs_Phi_plot = new TH1F("Higgs_Phi_signal","",50,-7,7);
   
@@ -232,7 +232,7 @@ void parton_level_analysis_signal_higgs(){
   
   
   // draw plot
-  gStyle->SetPadLeftMargin(0.15); gStyle->SetPadBottomMargin(0.15);
+  gStyle->SetPadLeftMargin(0.17); gStyle->SetPadRightMargin(0.05); gStyle->SetPadBottomMargin(0.15);
   gStyle->SetTitleFont(12, "xyz"); // 设置标题字体，xyz表示轴：X、Y和Z
   gStyle->SetLabelFont(12, "xyz"); // 设置标签字体
   gStyle->SetTextFont(12); // 设置文本字体
@@ -246,10 +246,10 @@ void parton_level_analysis_signal_higgs(){
   
   Higgs_Eta_plot->GetXaxis()->SetTitle("#eta(H)");
   Higgs_Eta_plot->GetYaxis()->SetTitle("d#sigma/d#eta(H)[pb]");
-  Higgs_Eta_plot->GetXaxis()->SetTitleSize(0.05);
-  Higgs_Eta_plot->GetYaxis()->SetTitleSize(0.05);
-  Higgs_Eta_plot->GetXaxis()->SetLabelSize(0.04);
-  Higgs_Eta_plot->GetYaxis()->SetLabelSize(0.04);
+  Higgs_Eta_plot->GetXaxis()->SetTitleSize(0.07);
+  Higgs_Eta_plot->GetYaxis()->SetTitleSize(0.07);
+  Higgs_Eta_plot->GetXaxis()->SetLabelSize(0.06);
+  Higgs_Eta_plot->GetYaxis()->SetLabelSize(0.06);
   Higgs_Eta_plot->GetXaxis()->SetTitleFont(132);
   Higgs_Eta_plot->GetYaxis()->SetTitleFont(132);
   //ForwardMuon_Eta_plot_signal->GetYaxis()->SetRangeUser(0.0001,1000);
@@ -280,10 +280,10 @@ void parton_level_analysis_signal_higgs(){
   
   Higgs_Pt_plot->GetXaxis()->SetTitle("p_{T}(H)[GeV]");
   Higgs_Pt_plot->GetYaxis()->SetTitle("d#sigma/dp_{T}(H)[pb/GeV]");
-  Higgs_Pt_plot->GetXaxis()->SetTitleSize(0.05);
-  Higgs_Pt_plot->GetYaxis()->SetTitleSize(0.05);
-  Higgs_Pt_plot->GetXaxis()->SetLabelSize(0.04);
-  Higgs_Pt_plot->GetYaxis()->SetLabelSize(0.04);
+  Higgs_Pt_plot->GetXaxis()->SetTitleSize(0.07);
+  Higgs_Pt_plot->GetYaxis()->SetTitleSize(0.07);
+  Higgs_Pt_plot->GetXaxis()->SetLabelSize(0.06);
+  Higgs_Pt_plot->GetYaxis()->SetLabelSize(0.06);
   Higgs_Pt_plot->GetXaxis()->SetTitleFont(132);
   Higgs_Pt_plot->GetYaxis()->SetTitleFont(132);
   Higgs_Pt_plot->GetYaxis()->SetNdivisions(5);
@@ -313,10 +313,10 @@ void parton_level_analysis_signal_higgs(){
   
   Higgs_Phi_plot->GetXaxis()->SetTitle("#phi(H)");
   Higgs_Phi_plot->GetYaxis()->SetTitle("d#sigma/d#phi(H)[pb]");
-  Higgs_Phi_plot->GetXaxis()->SetTitleSize(0.05);
-  Higgs_Phi_plot->GetYaxis()->SetTitleSize(0.05);
-  Higgs_Phi_plot->GetXaxis()->SetLabelSize(0.04);
-  Higgs_Phi_plot->GetYaxis()->SetLabelSize(0.04);
+  Higgs_Phi_plot->GetXaxis()->SetTitleSize(0.07);
+  Higgs_Phi_plot->GetYaxis()->SetTitleSize(0.07);
+  Higgs_Phi_plot->GetXaxis()->SetLabelSize(0.06);
+  Higgs_Phi_plot->GetYaxis()->SetLabelSize(0.06);
   Higgs_Phi_plot->GetXaxis()->SetTitleFont(132);
   Higgs_Phi_plot->GetYaxis()->SetTitleFont(132);
   Higgs_Phi_plot->GetYaxis()->SetNdivisions(5);

@@ -33,9 +33,8 @@ void truth_level_analysis(){
   
   //TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/mumu_bkg_beam_resolution.root");
   //TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_02/tag_1_delphes_events.root");
-  //TFile *f3plus = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_plus/tag_3_delphes_events.root");
-  //TFile *f3minus = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_minus/tag_4_delphes_events.root");
-  TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_03/tag_7_pythia8_events.root");
+  //TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/run_03/tag_7_pythia8_events.root");
+  TFile *f3 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumu_bkg/Events/10_TeV_1000000/tag_1_pythia8_events.root");
   
   //TFile *f4 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumua_bkg/Events/mumua_bkg_beam_resolution.root");
   //TFile *f4 = TFile::Open("/mnt/e/Madgraph/MG5_aMC_v3_4_0/HZZ_bkg/mumua_bkg/Events/run_04/tag_1_delphes_events.root");
@@ -93,14 +92,14 @@ void truth_level_analysis(){
   TH1F *ForwardMuon_E_plot_signal = new TH1F("Forwardmuon_E_signal","",30,0,7000);
   TH1F *ForwardMuon_PT_plot_signal = new TH1F("Forwardmuon_PT_signal","",30,-10,2000);
   TH1F *ForwardMuon_sumPT_plot_signal = new TH1F("Forwardmuon_sumPT_signal","",30,-30,350);
-  TH1F *ForwardMuon_Emin_plot_signal = new TH1F("Forwardmuon_Emin_signal","",30,0,7000);
+  TH1F *ForwardMuon_Emin_plot_signal = new TH1F("Forwardmuon_Emin_signal","",30,0,7);
   
   
   TH1F *ForwardMuon_Eta_plot_mumu_bkg = new TH1F("Forwardmuon_Eta_mumu_bkg","",50,-8,8);
   TH1F *ForwardMuon_E_plot_mumu_bkg = new TH1F("Forwardmuon_E_mumu_bkg","",30,0,7000);
   TH1F *ForwardMuon_PT_plot_mumu_bkg = new TH1F("Forwardmuon_PT_mumu_bkg","",30,-10,2000);
   TH1F *ForwardMuon_sumPT_plot_mumu_bkg = new TH1F("Forwardmuon_sumPT_mumu_bkg","",30,-30,350);
-  TH1F *ForwardMuon_Emin_plot_mumu_bkg = new TH1F("Forwardmuon_Emin_mumu_bkg","",30,0,7000);
+  TH1F *ForwardMuon_Emin_plot_mumu_bkg = new TH1F("Forwardmuon_Emin_mumu_bkg","",30,0,7);
   
   /*TH1F *ForwardMuon_Eta_plot_jj_bkg = new TH1F("Forwardmuon_Eta_jj_bkg","Forwardmuon_Eta_jj_bkg",50,-10,10);
   TH1F *ForwardMuon_E_plot_jj_bkg = new TH1F("Forwardmuon_E_jj_bkg","Forwardmuon_E_jj_bkg",25,-10,8000);
@@ -111,13 +110,13 @@ void truth_level_analysis(){
   TH1F *ForwardMuon_E_plot_ww_bkg = new TH1F("Forwardmuon_E_ww_bkg","",30,0,7000);
   TH1F *ForwardMuon_PT_plot_ww_bkg = new TH1F("Forwardmuon_PT_ww_bkg","",30,-10,2000);
   TH1F *ForwardMuon_sumPT_plot_ww_bkg = new TH1F("Forwardmuon_sumPT_ww_bkg","",30,-30,350);
-  TH1F *ForwardMuon_Emin_plot_ww_bkg = new TH1F("Forwardmuon_Emin_ww_bkg","",30,0,7000);
+  TH1F *ForwardMuon_Emin_plot_ww_bkg = new TH1F("Forwardmuon_Emin_ww_bkg","",30,0,7);
   
   TH1F *ForwardMuon_Eta_plot_mumua_bkg = new TH1F("Forwardmuon_Eta_mumua_bkg","",50,-8,8);
   TH1F *ForwardMuon_E_plot_mumua_bkg = new TH1F("Forwardmuon_E_mumua_bkg","",30,0,7000);
   TH1F *ForwardMuon_PT_plot_mumua_bkg = new TH1F("Forwardmuon_PT_mumua_bkg","",30,-10,2000);
   TH1F *ForwardMuon_sumPT_plot_mumua_bkg = new TH1F("Forwardmuon_sumPT_mumua_bkg","",30,-30,350);
-  TH1F *ForwardMuon_Emin_plot_mumua_bkg = new TH1F("Forwardmuon_Emin_mumua_bkg","",30,0,7000);
+  TH1F *ForwardMuon_Emin_plot_mumua_bkg = new TH1F("Forwardmuon_Emin_mumua_bkg","",30,0,7);
   
   /*TH1F *ForwardMuon_Eta_plot_vmvm_bkg = new TH1F("Forwardmuon_Eta_vmvm_bkg","Forwardmuon_Eta_vmvm_bkg",50,-10,10);
   TH1F *ForwardMuon_E_plot_vmvm_bkg = new TH1F("Forwardmuon_E_vmvm_bkg","Forwardmuon_E_vmvm_bkg",25,-10,8000);
@@ -141,22 +140,22 @@ void truth_level_analysis(){
   TH1F *ForwardMuon_E_plot_ff_bkg = new TH1F("Forwardmuon_E_ff_bkg","",30,0,7000);
   TH1F *ForwardMuon_PT_plot_ff_bkg = new TH1F("Forwardmuon_PT_ff_bkg","",30,-10,2000);
   TH1F *ForwardMuon_sumPT_plot_ff_bkg = new TH1F("Forwardmuon_sumPT_ff_bkg","",30,-30,350);
-  TH1F *ForwardMuon_Emin_plot_ff_bkg = new TH1F("Forwardmuon_Emin_ff_bkg","",30,0,7000);
+  TH1F *ForwardMuon_Emin_plot_ff_bkg = new TH1F("Forwardmuon_Emin_ff_bkg","",30,0,7);
   
   
   
   
   
-  TH1F *Higgs_mass_plot_signal = new TH1F("Higgs_mass_signal","",40,-500,1500);
+  TH1F *Higgs_mass_plot_signal = new TH1F("Higgs_mass_signal","",35,-50,1500);
   //TH1F *Higgs_mass_plot_jj_bkg = new TH1F("Higgs_mass_jj_bkg","Higgs_mass_jj_bkg",50,-5000,5000);
-  TH1F *Higgs_mass_plot_ww_bkg = new TH1F("Higgs_mass_ww_bkg","Higgs_mass_ww_bkg",40,-500,1500);
+  TH1F *Higgs_mass_plot_ww_bkg = new TH1F("Higgs_mass_ww_bkg","Higgs_mass_ww_bkg",35,-50,1500);
   //TH1F *Higgs_mass_plot_mumu_bkg = new TH1F("Higgs_mass_mumu_bkg","Higgs_mass_mumu_bkg",50,-5000,5000);
-  TH1F *Higgs_mass_plot_mumua_bkg = new TH1F("Higgs_mass_mumua_bkg","",40,-500,1500);
-  TH1F *Higgs_mass_plot_mumu_bkg = new TH1F("Higgs_mass_mumu_bkg","",40,-500,1500);
+  TH1F *Higgs_mass_plot_mumua_bkg = new TH1F("Higgs_mass_mumua_bkg","",35,-50,1500);
+  TH1F *Higgs_mass_plot_mumu_bkg = new TH1F("Higgs_mass_mumu_bkg","",35,-50,1500);
   //TH1F *Higgs_mass_plot_vmvm_bkg = new TH1F("Higgs_mass_vmvm_bkg","Higgs_mass_vmvm_bkg",50,-5000,5000);
   //TH1F *Higgs_mass_plot_ee_bkg = new TH1F("Higgs_mass_ee_bkg","Higgs_mass_ee_bkg",50,-5000,5000);
   //TH1F *Higgs_mass_plot_total_bkg = new TH1F("Higgs_mass_total_bkg","",50,-5000,5000);
-  TH1F *Higgs_mass_plot_ff_bkg = new TH1F("Higgs_mass_ff_bkg","",40,-500,1500);
+  TH1F *Higgs_mass_plot_ff_bkg = new TH1F("Higgs_mass_ff_bkg","",35,-50,1500);
   
   //TH1F *Higgs_mass_2_plot_signal = new TH1F("Higgs_mass_2_signal","",50,-5000,5000);
   //TH1F *Higgs_mass_2_plot_total_bkg = new TH1F("Higgs_mass_2_total_bkg","",50,-5000,5000);
@@ -322,7 +321,7 @@ void truth_level_analysis(){
   double weight_signal=0.0867/200000.0;
   for (int i=0; i<entries0; ++i){
     s1->GetEntry(i);
-    
+    int particle_length = s1->GetLeaf("Particle_status")->GetLen();
     TLorentzVector Initial;
     TLorentzVector Muon1;
     TLorentzVector Muon2;
@@ -342,15 +341,15 @@ void truth_level_analysis(){
  
     
     // ForwardMuon_size == 2
-    for(int j=0; j<19;++j){
-        if(Particle_pid[20-j]==-13){
-            Muon_temp.SetPxPyPzE(Particle_px[20-j],Particle_py[20-j],Particle_pz[20-j],Particle_energy[20-j]);
+    for(int j=0; j<particle_length-1;++j){
+        if(Particle_pid[particle_length-1-j]==-13){
+            Muon_temp.SetPxPyPzE(Particle_px[particle_length-1-j],Particle_py[particle_length-1-j],Particle_pz[particle_length-1-j],Particle_energy[particle_length-1-j]);
             if(abs(Muon_temp.Eta())>2.5&&Muon_temp.E()>200.0){Muon1=Muon_temp; break;}
         }
     }
-    for(int j=0; j<19;++j){
-        if(Particle_pid[20-j]==13){
-            Muon_temp.SetPxPyPzE(Particle_px[20-j],Particle_py[20-j],Particle_pz[20-j],Particle_energy[20-j]);
+    for(int j=0; j<particle_length-1;++j){
+        if(Particle_pid[particle_length-1-j]==13){
+            Muon_temp.SetPxPyPzE(Particle_px[particle_length-1-j],Particle_py[particle_length-1-j],Particle_pz[particle_length-1-j],Particle_energy[particle_length-1-j]);
             if(abs(Muon_temp.Eta())>2.5&&Muon_temp.E()>200.0){Muon2=Muon_temp; break;}
         }
     }
@@ -388,7 +387,7 @@ void truth_level_analysis(){
                 Higgs_mass_plot_signal->Fill(Higgs_mass,weight_signal);
                 if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E(); ForwardMuon_PT_plot_signal->Fill(Muon1.Pt(),weight_signal);}
                 if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E(); ForwardMuon_PT_plot_signal->Fill(Muon2.Pt(),weight_signal);}
-                ForwardMuon_Emin_plot_signal->Fill(Muon_Emin,weight_signal);
+                ForwardMuon_Emin_plot_signal->Fill(Muon_Emin/1000.0,weight_signal);
                 
             
                 if(Twomuon_PT > 50){
@@ -430,6 +429,7 @@ void truth_level_analysis(){
   double weight_jj=2.058/200000.0;
   for (int i=0; i<entries1; ++i){
     b1->GetEntry(i);
+    //int particle_length = b1->GetLeaf("Particle_status")->GetLen();
     TLorentzVector Initial;
     TLorentzVector Muon1;
     TLorentzVector Muon2;
@@ -492,7 +492,7 @@ void truth_level_analysis(){
                 
                 if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon1.Pt(),weight_jj);}
                 if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon2.Pt(),weight_jj);}
-                ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin,weight_jj);
+                ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin/1000.0,weight_jj);
                 //ForwardMuon_sumPT_plot_total_bkg->Fill(Twomuon_PT,weight_jj);
                 
                 
@@ -598,7 +598,7 @@ void truth_level_analysis(){
                 
                 if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E(); ForwardMuon_PT_plot_ww_bkg->Fill(Muon1.Pt(),weight_ww);}
                 if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E(); ForwardMuon_PT_plot_ww_bkg->Fill(Muon2.Pt(),weight_ww);}
-                ForwardMuon_Emin_plot_ww_bkg->Fill(Muon_Emin,weight_ww);
+                ForwardMuon_Emin_plot_ww_bkg->Fill(Muon_Emin/1000.0,weight_ww);
                 //ForwardMuon_sumPT_plot_total_bkg->Fill(Twomuon_PT,weight_jj);
                 
                 
@@ -635,9 +635,10 @@ void truth_level_analysis(){
   
   std::cout <<"pass2"<<std::endl;
   //////////////////////////mumu_bkg//////////////////////////////////////////////////////////////////////
-  double weight_mumu=11150.0/133333.0;
+  double weight_mumu=11150.0/1000000.0;
   for (int i=0; i<entries3; ++i){
     b3->GetEntry(i);
+    int particle_length = b3->GetLeaf("Particle_status")->GetLen();
     TLorentzVector Initial;
     TLorentzVector Muon1;
     TLorentzVector Muon2;
@@ -651,7 +652,7 @@ void truth_level_analysis(){
     double Muon_Emin=-999;
     Initial.SetPxPyPzE(0,0,0,10000);
     
-    for (int j=2; j<50; ++j){
+    for (int j=2; j<particle_length-1; ++j){
         if(Particle_status[2]==1&&Particle_status[3]==1){
             muon_plus=2;
             muon_minus=3;
@@ -710,11 +711,14 @@ void truth_level_analysis(){
                     //ForwardMuon_PT_plot_mumu_bkg->Fill(Muon2.Pt(),weight_mumu);
                     ForwardMuon_Eta_plot_mumu_bkg->Fill(Muon1.Eta(),weight_mumu);
                     ForwardMuon_Eta_plot_mumu_bkg->Fill(Muon2.Eta(),weight_mumu);
-                    Higgs_mass_plot_mumu_bkg->Fill(Higgs_mass,weight_mumu);
+                    if(Higgs_mass<1300.0){
+                        Higgs_mass_plot_mumu_bkg->Fill(Higgs_mass,weight_mumu);
+                    }
+                    
                 
                     if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E(); ForwardMuon_PT_plot_mumu_bkg->Fill(Muon1.Pt(),weight_mumu);}
                     if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E(); ForwardMuon_PT_plot_mumu_bkg->Fill(Muon2.Pt(),weight_mumu);}
-                    ForwardMuon_Emin_plot_mumu_bkg->Fill(Muon_Emin,weight_mumu);
+                    ForwardMuon_Emin_plot_mumu_bkg->Fill(Muon_Emin/1000.0,weight_mumu);
                     //ForwardMuon_sumPT_plot_total_bkg->Fill(Twomuon_PT,weight_jj);
                 
                     
@@ -743,7 +747,7 @@ void truth_level_analysis(){
   double weight_mumua=754.8/286000.0;
   for (int i=0; i<entries4; ++i){
     b4->GetEntry(i);
-    
+    int particle_length = b4->GetLeaf("Particle_status")->GetLen();
     TLorentzVector Initial;
     TLorentzVector Muon1;
     TLorentzVector Muon2;
@@ -757,7 +761,7 @@ void truth_level_analysis(){
     double Muon_Emin=-999;
     Initial.SetPxPyPzE(0,0,0,10000);
     
-    for (int j=2; j<50; ++j){
+    for (int j=2; j<particle_length-1; ++j){
         if(Particle_status[j]==1 && Particle_status[j+1]==1 && Particle_status[j+2]==1){
             if(abs(Particle_pid[j])==13&&abs(Particle_pid[j+1])==13){
                 muon_plus=j;
@@ -821,7 +825,7 @@ void truth_level_analysis(){
                 
                 if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E(); ForwardMuon_PT_plot_mumua_bkg->Fill(Muon1.Pt(),weight_mumua);}
                 if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E(); ForwardMuon_PT_plot_mumua_bkg->Fill(Muon2.Pt(),weight_mumua);}
-                ForwardMuon_Emin_plot_mumua_bkg->Fill(Muon_Emin,weight_mumua);
+                ForwardMuon_Emin_plot_mumua_bkg->Fill(Muon_Emin/1000.0,weight_mumua);
                 //ForwardMuon_sumPT_plot_total_bkg->Fill(Twomuon_PT,weight_jj);
                 
                 
@@ -909,7 +913,7 @@ void truth_level_analysis(){
                 
                 if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon1.Pt(),weight_vmvm);}
                 if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon2.Pt(),weight_vmvm);}
-                ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin,weight_vmvm);
+                ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin/1000.0,weight_vmvm);
                 
                 //ForwardMuon_sumPT_plot_total_bkg->Fill(Twomuon_PT,weight_vmvm);
                 //ForwardMuon_sumPT_plot_ff_bkg->Fill(Twomuon_PT,weight_vmvm);
@@ -1006,7 +1010,7 @@ void truth_level_analysis(){
                 
                 if(Muon1.E() < Muon2.E()){Muon_Emin=Muon1.E(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon1.Pt(),weight_ee);}
                 if(Muon1.E() > Muon2.E()){Muon_Emin=Muon2.E(); ForwardMuon_PT_plot_ff_bkg->Fill(Muon2.Pt(),weight_ee);}
-                ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin,weight_ee);
+                ForwardMuon_Emin_plot_ff_bkg->Fill(Muon_Emin/1000.0,weight_ee);
                
                 
                 if(Twomuon_PT > 50){
@@ -1101,7 +1105,7 @@ void truth_level_analysis(){
   
   
   // draw plot
-  gStyle->SetPadLeftMargin(0.15); gStyle->SetPadBottomMargin(0.15);
+  gStyle->SetPadLeftMargin(0.17); gStyle->SetPadRightMargin(0.05); gStyle->SetPadBottomMargin(0.15);
   gStyle->SetTitleFont(132, "xyz"); 
   gStyle->SetLabelFont(132, "xyz"); 
   gStyle->SetTextFont(132); 
@@ -1127,10 +1131,10 @@ void truth_level_analysis(){
   
   ForwardMuon_Eta_plot_signal->GetXaxis()->SetTitle("#eta(#mu)");
   ForwardMuon_Eta_plot_signal->GetYaxis()->SetTitle("d#sigma/d#eta(#mu)[pb]");
-  ForwardMuon_Eta_plot_signal->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_Eta_plot_signal->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_Eta_plot_signal->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_Eta_plot_signal->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_Eta_plot_signal->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_Eta_plot_signal->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_Eta_plot_signal->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_Eta_plot_signal->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_Eta_plot_signal->GetXaxis()->SetTitleFont(132);
   ForwardMuon_Eta_plot_signal->GetYaxis()->SetTitleFont(132);
   ForwardMuon_Eta_plot_signal->GetYaxis()->SetRangeUser(0.0001,1000);
@@ -1141,13 +1145,14 @@ void truth_level_analysis(){
   ForwardMuon_Eta_plot_ff_bkg->Draw("same" "HIST");
   ForwardMuon_Eta_plot_ww_bkg->Draw("same" "HIST");
   
-  TLegend *l110 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l110 = new TLegend(0.80,0.63,0.95,0.90);
   l110->AddEntry(ForwardMuon_Eta_plot_signal,"#mu#muh","l");
   l110->AddEntry(ForwardMuon_Eta_plot_ff_bkg,"#mu#muff","l");
   l110->AddEntry(ForwardMuon_Eta_plot_ww_bkg,"#mu#muww","l");
   l110->AddEntry(ForwardMuon_Eta_plot_mumua_bkg,"#mu#mu#gamma","l");
   l110->AddEntry(ForwardMuon_Eta_plot_mumu_bkg,"#mu#mu","l");
   l110->SetTextFont(132);
+  l110->SetTextSize(0.05);
   l110->Draw();
   
   
@@ -1177,10 +1182,10 @@ void truth_level_analysis(){
   
   ForwardMuon_E_plot_signal->GetXaxis()->SetTitle("E(#mu^{-})[GeV]");
   ForwardMuon_E_plot_signal->GetYaxis()->SetTitle("d#sigma/dE(#mu^{-})[pb/GeV]");
-  ForwardMuon_E_plot_signal->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_E_plot_signal->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_E_plot_signal->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_E_plot_signal->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_E_plot_signal->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_E_plot_signal->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_E_plot_signal->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_E_plot_signal->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_E_plot_signal->GetXaxis()->SetTitleFont(132);
   ForwardMuon_E_plot_signal->GetYaxis()->SetTitleFont(132);
   ForwardMuon_E_plot_signal->GetYaxis()->SetRangeUser(0.0001,2000);
@@ -1191,13 +1196,14 @@ void truth_level_analysis(){
   ForwardMuon_E_plot_ff_bkg->Draw("same" "HIST");
   ForwardMuon_E_plot_ww_bkg->Draw("same" "HIST");
   
-  TLegend *l120 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l120 = new TLegend(0.76,0.63,0.95,0.90);
   l120->AddEntry(ForwardMuon_E_plot_signal,"#mu#muh","l");
   l120->AddEntry(ForwardMuon_E_plot_ff_bkg,"#mu#muff","l");
   l120->AddEntry(ForwardMuon_E_plot_ww_bkg,"#mu#muww","l");
   l120->AddEntry(ForwardMuon_E_plot_mumua_bkg,"#mu#mu#gamma","l");
   l120->AddEntry(ForwardMuon_E_plot_mumu_bkg,"#mu#mu","l");
   l120->SetTextFont(132);
+  l120->SetTextSize(0.05);
   l120->Draw();
   
   c120->SetLogy();
@@ -1224,10 +1230,10 @@ void truth_level_analysis(){
   
   ForwardMuon_PT_plot_signal->GetXaxis()->SetTitle("p_{T,min}(#mu)[GeV]");
   ForwardMuon_PT_plot_signal->GetYaxis()->SetTitle("d#sigma/dp_{T,min}(#mu)[pb/GeV]");
-  ForwardMuon_PT_plot_signal->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_PT_plot_signal->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_PT_plot_signal->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_PT_plot_signal->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_PT_plot_signal->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_PT_plot_signal->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_PT_plot_signal->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_PT_plot_signal->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_PT_plot_signal->GetXaxis()->SetTitleFont(132);
   ForwardMuon_PT_plot_signal->GetYaxis()->SetTitleFont(132);
   ForwardMuon_PT_plot_signal->GetYaxis()->SetRangeUser(0.0001,1000);
@@ -1240,13 +1246,14 @@ void truth_level_analysis(){
   ForwardMuon_PT_plot_ww_bkg->Draw("same" "HIST");
   
   
-  TLegend *l130 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l130 = new TLegend(0.76,0.63,0.95,0.90);
   l130->AddEntry(ForwardMuon_PT_plot_signal,"#mu#muh","l");
   l130->AddEntry(ForwardMuon_PT_plot_ff_bkg,"#mu#muff","l");
   l130->AddEntry(ForwardMuon_PT_plot_ww_bkg,"#mu#muww","l");
   l130->AddEntry(ForwardMuon_PT_plot_mumua_bkg,"#mu#mu#gamma","l");
   l130->AddEntry(ForwardMuon_PT_plot_mumu_bkg,"#mu#mu","l");
   l130->SetTextFont(132);
+  l130->SetTextSize(0.05);
   l130->Draw();
   
   
@@ -1277,10 +1284,10 @@ void truth_level_analysis(){
   
   ForwardMuon_sumPT_plot_signal->GetXaxis()->SetTitle("p_{T}(#mu#mu)[GeV]");
   ForwardMuon_sumPT_plot_signal->GetYaxis()->SetTitle("d#sigma/dp_{T}(#mu#mu)[pb/GeV]");
-  ForwardMuon_sumPT_plot_signal->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_sumPT_plot_signal->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_sumPT_plot_signal->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_sumPT_plot_signal->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_sumPT_plot_signal->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_sumPT_plot_signal->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_sumPT_plot_signal->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_sumPT_plot_signal->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_sumPT_plot_signal->GetXaxis()->SetTitleFont(132);
   ForwardMuon_sumPT_plot_signal->GetYaxis()->SetTitleFont(132);
   ForwardMuon_sumPT_plot_signal->GetYaxis()->SetRangeUser(0.0001,2000);
@@ -1291,13 +1298,14 @@ void truth_level_analysis(){
   ForwardMuon_sumPT_plot_ff_bkg->Draw("same" "HIST");
   ForwardMuon_sumPT_plot_ww_bkg->Draw("same" "HIST");
   
-  TLegend *l140 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l140 = new TLegend(0.76,0.63,0.95,0.90);
   l140->AddEntry(ForwardMuon_sumPT_plot_signal,"#mu#muh","l");
   l140->AddEntry(ForwardMuon_sumPT_plot_ff_bkg,"#mu#muff","l");
   l140->AddEntry(ForwardMuon_sumPT_plot_ww_bkg,"#mu#muww","l");
   l140->AddEntry(ForwardMuon_sumPT_plot_mumua_bkg,"#mu#mu#gamma","l");
   l140->AddEntry(ForwardMuon_sumPT_plot_mumu_bkg,"#mu#mu","l");
   l140->SetTextFont(132);
+  l140->SetTextSize(0.05);
   l140->Draw();
   
   
@@ -1327,13 +1335,13 @@ void truth_level_analysis(){
   
   Higgs_mass_plot_signal->GetXaxis()->SetTitle("M_{recoil}[GeV]");
   Higgs_mass_plot_signal->GetYaxis()->SetTitle("d#sigma/dM_{recoil}[pb/GeV]");
-  Higgs_mass_plot_signal->GetXaxis()->SetTitleSize(0.05);
-  Higgs_mass_plot_signal->GetYaxis()->SetTitleSize(0.05);
-  Higgs_mass_plot_signal->GetXaxis()->SetLabelSize(0.04);
-  Higgs_mass_plot_signal->GetYaxis()->SetLabelSize(0.04);
+  Higgs_mass_plot_signal->GetXaxis()->SetTitleSize(0.07);
+  Higgs_mass_plot_signal->GetYaxis()->SetTitleSize(0.07);
+  Higgs_mass_plot_signal->GetXaxis()->SetLabelSize(0.05);
+  Higgs_mass_plot_signal->GetYaxis()->SetLabelSize(0.06);
   Higgs_mass_plot_signal->GetXaxis()->SetTitleFont(132);
   Higgs_mass_plot_signal->GetYaxis()->SetTitleFont(132);
-  Higgs_mass_plot_signal->GetYaxis()->SetRangeUser(0.0001,1000);
+  Higgs_mass_plot_signal->GetYaxis()->SetRangeUser(0.0001,5000);
   
   
   Higgs_mass_plot_signal->Draw("HIST");
@@ -1343,13 +1351,14 @@ void truth_level_analysis(){
   Higgs_mass_plot_ww_bkg->Draw("same" "HIST");
   
   
-  TLegend *l3 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l3 = new TLegend(0.76,0.63,0.95,0.90);
   l3->AddEntry(Higgs_mass_plot_signal,"#mu#muh","l");
   l3->AddEntry(Higgs_mass_plot_ff_bkg,"#mu#muff","l");
   l3->AddEntry(Higgs_mass_plot_ww_bkg,"#mu#muww","l");
   l3->AddEntry(Higgs_mass_plot_mumua_bkg,"#mu#mu#gamma","l");
   l3->AddEntry(Higgs_mass_plot_mumu_bkg,"#mu#mu","l");
   l3->SetTextFont(132);
+  l3->SetTextSize(0.05);
   l3->Draw();
   
   c3->SetLogy();
@@ -1380,12 +1389,12 @@ void truth_level_analysis(){
   ForwardMuon_Emin_plot_mumu_bkg->SetLineWidth(2);
   ForwardMuon_Emin_plot_signal->SetLineWidth(3);
   
-  ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitle("E_{min}(#mu)[GeV]");
-  ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitle("d#sigma/dE_{min}(#mu)[pb/GeV]");
-  ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_Emin_plot_signal->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_Emin_plot_signal->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitle("E_{min}(#mu)[TeV]");
+  ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitle("d#sigma/dE_{min}(#mu)[pb/TeV]");
+  ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_Emin_plot_signal->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_Emin_plot_signal->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_Emin_plot_signal->GetXaxis()->SetTitleFont(132);
   ForwardMuon_Emin_plot_signal->GetYaxis()->SetTitleFont(132);
   ForwardMuon_Emin_plot_signal->GetYaxis()->SetRangeUser(0.0001,1000);
@@ -1398,13 +1407,14 @@ void truth_level_analysis(){
   ForwardMuon_Emin_plot_ww_bkg->Draw("same" "HIST");
   
   
-  TLegend *l10 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l10 = new TLegend(0.76,0.63,0.95,0.90);
   l10->AddEntry(ForwardMuon_Emin_plot_signal,"#mu#muh","l");
   l10->AddEntry(ForwardMuon_Emin_plot_ff_bkg,"#mu#muff","l");
   l10->AddEntry(ForwardMuon_Emin_plot_ww_bkg,"#mu#muww","l");
   l10->AddEntry(ForwardMuon_Emin_plot_mumua_bkg,"#mu#mu#gamma","l");
   l10->AddEntry(ForwardMuon_Emin_plot_mumu_bkg,"#mu#mu","l");
   l10->SetTextFont(132);
+  l10->SetTextSize(0.05);
   l10->Draw();
   
   c10->SetLogy();

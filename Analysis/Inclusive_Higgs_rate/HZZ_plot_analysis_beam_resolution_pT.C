@@ -1039,7 +1039,7 @@ void HZZ_plot_analysis_beam_resolution_pT(){
   
   
   // draw plot
-  gStyle->SetPadLeftMargin(0.15); gStyle->SetPadBottomMargin(0.15);
+  gStyle->SetPadLeftMargin(0.17); gStyle->SetPadRightMargin(0.05); gStyle->SetPadBottomMargin(0.15);
   gStyle->SetTitleFont(132, "xyz"); 
   gStyle->SetLabelFont(132, "xyz"); 
   gStyle->SetTextFont(132); 
@@ -1064,10 +1064,10 @@ void HZZ_plot_analysis_beam_resolution_pT(){
   
   ForwardMuon_sumPT_plot_mumua_bkg->GetXaxis()->SetTitle("p_{T}(#mu#mu)[GeV]");
   ForwardMuon_sumPT_plot_mumua_bkg->GetYaxis()->SetTitle("d#sigma/dp_{T}(#mu#mu)[pb/GeV]");
-  ForwardMuon_sumPT_plot_mumua_bkg->GetXaxis()->SetTitleSize(0.05);
-  ForwardMuon_sumPT_plot_mumua_bkg->GetYaxis()->SetTitleSize(0.05);
-  ForwardMuon_sumPT_plot_mumua_bkg->GetXaxis()->SetLabelSize(0.04);
-  ForwardMuon_sumPT_plot_mumua_bkg->GetYaxis()->SetLabelSize(0.04);
+  ForwardMuon_sumPT_plot_mumua_bkg->GetXaxis()->SetTitleSize(0.07);
+  ForwardMuon_sumPT_plot_mumua_bkg->GetYaxis()->SetTitleSize(0.07);
+  ForwardMuon_sumPT_plot_mumua_bkg->GetXaxis()->SetLabelSize(0.06);
+  ForwardMuon_sumPT_plot_mumua_bkg->GetYaxis()->SetLabelSize(0.06);
   ForwardMuon_sumPT_plot_mumua_bkg->GetXaxis()->SetTitleFont(132);
   ForwardMuon_sumPT_plot_mumua_bkg->GetYaxis()->SetTitleFont(132);
   ForwardMuon_sumPT_plot_mumua_bkg->GetYaxis()->SetRangeUser(0.0001,1000);
@@ -1078,12 +1078,13 @@ void HZZ_plot_analysis_beam_resolution_pT(){
   ForwardMuon_sumPT_plot_ff_bkg->Draw("same" "HIST");
   ForwardMuon_sumPT_plot_ww_bkg->Draw("same" "HIST");
   
-  TLegend *l140 = new TLegend(0.72,0.72,0.9,0.9);
+  TLegend *l140 = new TLegend(0.76,0.65,0.95,0.90);
   l140->AddEntry(ForwardMuon_sumPT_plot_signal,"#mu#muh","l");
   l140->AddEntry(ForwardMuon_sumPT_plot_ff_bkg,"#mu#muff","l");
   l140->AddEntry(ForwardMuon_sumPT_plot_ww_bkg,"#mu#muww","l");
   l140->AddEntry(ForwardMuon_sumPT_plot_mumua_bkg,"#mu#mu#gamma","l");
   l140->SetTextFont(132);
+  l140->SetTextSize(0.05);
   l140->Draw();
   
   
