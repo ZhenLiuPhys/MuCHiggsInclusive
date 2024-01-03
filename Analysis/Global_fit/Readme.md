@@ -1,1 +1,1 @@
-Here is the global fit part
+Here is the global fit MMA file
