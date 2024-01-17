@@ -1,4 +1,5 @@
 Files for inclusive Higgs rate study. We didn't including the root files.
+The following files are all for 10 TeV study, except those files inside ./3_TeV
 
 HZZ_plot_analysis_parton_vs_reco.C produces the comparison of recoil_mass between parton_level and reconstruction_level FIG.1.
 
