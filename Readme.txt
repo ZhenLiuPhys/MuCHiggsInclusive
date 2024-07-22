@@ -1,5 +1,5 @@
 Higgs Width and Couplings at High Energy Muon Colliders with Forward Muon Detection
-This repository contains all the file used to generate the results/plots in arXiv:xxxx
+This repository contains all the file used to generate the results/plots in arXiv:2401.08756
 If you have any questions, please contact the author: Peiran Li (li001800@umn.edu)
 
 ./Analysis/Inclusive_Higgs_rate include all the result shown in section II.
